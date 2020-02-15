@@ -5,6 +5,8 @@ import ir.maktab.homeworks.hw15.arf.repositories.MedicineRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class MedicineService {
 
@@ -14,5 +16,9 @@ public class MedicineService {
 
     public Medicine save(Medicine medicine){
         return medicineRepository.save(medicine);
+    }
+
+    public List<Medicine> medicineList(){
+        return medicineRepository.findAll();
     }
 }

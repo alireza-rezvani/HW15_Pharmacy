@@ -28,4 +28,11 @@ public class MedicineController {
         medicineService.save(medicine);
         return "main-page";
     }
+
+
+    @RequestMapping(value = "/medicineList")
+    public String getMedicineList(Model model){
+        model.addAttribute("medicineList", medicineService.medicineList());
+        return "medicine-list-page";
+    }
 }

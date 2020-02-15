@@ -22,6 +22,6 @@ public class Prescription {
     @ManyToOne
     private Patient patient;
 
-    @OneToMany
+    @ManyToMany
     private List<Medicine> medicines;
 }
