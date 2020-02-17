@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>لیست بیماران</title>
+</head>
+<body>
+
+<table xmlns:th="http://www.thymeleaf.org">
+    <thead>
+    <tr>
+        <th>نام</th>
+        <th>نام خانوادگی</th>
+        <th>جنسیت</th>
+        <th colspan="4">عملیات</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each = "patientItem : ${patientList}">
+        <td th:text = "${patientItem.name}"/>
+        <td th:text = "${patientItem.family}"/>
+        <td th:text = "${patientItem.gender}"/>
+        <td><button onclick="delConfirm()">حذف</button></td>
+        <td><form action="#" th:action="@{/patient/deletePatient/__${patientItem.getId()}__}"><input hidden id="delButton" type="submit" value="تایید حذف"></form></td>
+        <td><form action="#" th:action="@{/patient/editPatient/__${patientItem.getId()}__}"><input type="submit" value="ویرایش"></form></td>
+        <td><form action="#" th:action="@{/patient/viewPatient/__${patientItem.getId()}__}"><input type="submit" value="مشاهده"></form></td>
+    </tr>
+    </tbody>
+</table>
+
+<form th:action="@{/}"><input type="submit" value="بازگشت به صفحه اصلی"></form>
+
+
+<script>
+    function delConfirm() {
+        document.getElementById("delButton").hidden = false;
+    }
+</script>
+
+
+</body>
+</html>

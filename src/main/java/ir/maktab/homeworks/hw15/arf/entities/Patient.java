@@ -3,6 +3,7 @@ package ir.maktab.homeworks.hw15.arf.entities;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.util.List;
@@ -20,5 +21,6 @@ public class Patient {
     private String gender;
 
     @OneToMany(mappedBy = "patient", cascade = CascadeType.ALL)
+    @ToString.Exclude
     private List<Prescription> prescriptions;
 }

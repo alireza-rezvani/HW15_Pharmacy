@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>مشاهده بیمار</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+
+<h1>مشاهده بیمار</h1>
+<form action="#" th:action="@{/patient/patientList}" th:object="${patient}" method="post">
+    <p hidden="hidden"><input type="text" th:field="*{id}"/></p>
+    <p>نام: <label th:text="*{name}" ></label></p>
+    <p>نام خانوادگی: <label  th:text="*{family}" ></label>/p>
+    <p>جنسیت: <label  th:text="*{gender}" ></label>/p>
+
+    <table>
+        <thead>
+        <th>کد نسخه</th>
+        <th>تاریخ صدور نسخه</th>
+        <th>تاریخ مراجعه بیمار</th>
+        </thead>
+        <tbody>
+        <tr th:each="presc:${patient.getPrescriptions()}">
+            <td th:text="${presc.code}"/>
+            <td th:text="${presc.creationDate}"/>
+            <td th:text="${presc.registrationDate}"/>
+        </tr>
+        </tbody>
+    </table>
+
+    <p><input type="submit" value="تایید" th:name="ok"/>
+</form>
+
+<form th:action="@{/}"><input type="submit" value="بازگشت به صفحه اصلی"></form>
+
+
+</body>
+</html>

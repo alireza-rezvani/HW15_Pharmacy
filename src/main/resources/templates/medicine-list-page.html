@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>لیست داروها</title>
+</head>
+<body>
+
+<table xmlns:th="http://www.thymeleaf.org">
+    <thead>
+    <tr>
+        <th>نام دارو</th>
+        <th>کد دارو</th>
+        <th>قیمت</th>
+        <th>توضیحات</th>
+        <th colspan="3">عملیات</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each = "medicinee : ${medicineList}">
+        <td th:text = "${medicinee.title}"/>
+        <td th:text = "${medicinee.code}"/>
+        <td th:text = "${medicinee.price}"/>
+        <td th:text = "${medicinee.description}"/>
+        <td><button onclick="delConfirm()">حذف</button></td>
+        <td><form action="#" th:action="@{/medicine/deleteMedicine/__${medicinee.getId()}__}"><input id="delButton" type="submit" value="تایید حذف" hidden></form></td>
+        <td><form action="#" th:action="@{/medicine/editMedicine/__${medicinee.getId()}__}"><input type="submit" value="ویرایش"></form></td>
+
+    </tr>
+    </tbody>
+</table>
+
+
+<script>
+    function delConfirm() {
+        document.getElementById("delButton").hidden = false;
+    }
+</script>
+
+<form th:action="@{/}"><input type="submit" value="بازگشت به صفحه اصلی"></form>
+
+</body>
+</html>

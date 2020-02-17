@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>تعریف نسخه</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>تعریف نسخه</h1>
+<form action="#" th:action="@{/prescription/definePrescription}" th:object="${prescription}" method="post">
+    <p hidden="hidden"><input type="text" th:field="*{id}"/></p>
+    <p>کد نسخه: <input type="text" th:field="*{code}"/></p>
+    <p>تاریخ صدور نسخه: <input type="text" th:field="*{creationDate}" /></p>
+    <p>تاریخ مراجعه بیمار: <input type="text" th:field="*{registrationDate}" /></p>
+    <p><input type="hidden" th:field="*{patient}"/></p>
+    <p><input type="submit" value="تایید" th:name="ok"/>
+    <p><input type="submit" value="لغو" th:name="cancel"/>
+</form>
+
+<form th:action="@{/}"><input type="submit" value="بازگشت به صفحه اصلی"></form>
+
+
+</body>
+</html>
+

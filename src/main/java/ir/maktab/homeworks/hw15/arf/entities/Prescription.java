@@ -3,6 +3,7 @@ package ir.maktab.homeworks.hw15.arf.entities;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.util.List;
@@ -20,6 +21,7 @@ public class Prescription {
     private String registrationDate;
 
     @ManyToOne
+    @ToString.Exclude
     private Patient patient;
 
     @ManyToMany

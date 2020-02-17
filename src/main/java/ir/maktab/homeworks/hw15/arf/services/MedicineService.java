@@ -21,4 +21,17 @@ public class MedicineService {
     public List<Medicine> medicineList(){
         return medicineRepository.findAll();
     }
+
+    public void deleteById(Long id){
+        medicineRepository.deleteById(id);
+    }
+
+    public Medicine findById(Long id){
+        return medicineRepository.findById(id).get();
+    }
+
+    public void update(Medicine medicine){
+
+        medicineRepository.updateById(medicine.getTitle(), medicine.getCode(),medicine.getPrice(), medicine.getDescription(),medicine.getId());
+    }
 }
