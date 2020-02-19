@@ -2,29 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="561d8cc5-f724-4c0d-9657-e81e08764516" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/homeworks/hw15/arf/Pharmacy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/homeworks/hw15/arf/controllers/PatientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/homeworks/hw15/arf/controllers/PrescriptionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/homeworks/hw15/arf/repositories/PatientRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/homeworks/hw15/arf/repositories/PrescriptionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/homeworks/hw15/arf/services/PatientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/homeworks/hw15/arf/services/PrescriptionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/define-patient-page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/define-prescription-page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/medicine-page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/patient-list-page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/patient-page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/view-patient-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab/homeworks/hw15/arf/controllers/MedicineController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/homeworks/hw15/arf/controllers/MedicineController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab/homeworks/hw15/arf/entities/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/homeworks/hw15/arf/entities/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab/homeworks/hw15/arf/entities/Prescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/homeworks/hw15/arf/entities/Prescription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab/homeworks/hw15/arf/repositories/MedicineRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/homeworks/hw15/arf/repositories/MedicineRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab/homeworks/hw15/arf/services/MedicineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/homeworks/hw15/arf/services/MedicineService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/add-medicine-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/define-medicine-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/medicine-list-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab/homeworks/hw15/arf/controllers/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/homeworks/hw15/arf/controllers/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab/homeworks/hw15/arf/controllers/PrescriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/homeworks/hw15/arf/controllers/PrescriptionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/define-medicine-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/define-medicine-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/define-patient-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/define-patient-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/define-prescription-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/define-prescription-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/medicine-list-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/medicine-list-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/medicine-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/medicine-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/patient-list-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/patient-list-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/patient-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/patient-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/view-patient-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/view-patient-page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +69,9 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alireza\Desktop\Java\Maktab Homeworks\Solutions\Finals\Folders\Alireza_RezvaniFakhr_HW15_Maktab32\src\main\resources\static" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ir.maktab.homeworks.hw15.arf.controllers" />
       <recent name="ir.maktab.homeworks.hw15.arf.services" />
@@ -138,7 +131,10 @@
       <workItem from="1581770884694" duration="7076000" />
       <workItem from="1581785896494" duration="1407000" />
       <workItem from="1581835330842" duration="25776000" />
-      <workItem from="1581908184826" duration="28459000" />
+      <workItem from="1581908184826" duration="28512000" />
+      <workItem from="1582005998461" duration="1464000" />
+      <workItem from="1582037319813" duration="684000" />
+      <workItem from="1582118607320" duration="13567000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1581536245357</created>
@@ -189,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581750146027</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="last commit before sending">
+      <created>1581953402478</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1581953402478</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,7 +203,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -213,7 +218,8 @@
     <MESSAGE value="Repository &amp; Service &amp; Controller created for Medicine" />
     <MESSAGE value="add-medicine-page.html &amp; main-page.html created" />
     <MESSAGE value="adding medicine done" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding medicine done" />
+    <MESSAGE value="last commit before sending" />
+    <option name="LAST_COMMIT_MESSAGE" value="last commit before sending" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581543737671">
@@ -228,46 +234,54 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="113" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1366.728@0.0.1366.728" timestamp="1581760098413" />
-    <state x="120" y="0" key="CommitChangelistDialog2" timestamp="1581750145356">
+    <state x="120" y="0" key="CommitChangelistDialog2" timestamp="1581953399078">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="120" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1581750145356" />
-    <state width="1322" height="555" key="GridCell.Tab.0.bottom" timestamp="1581953344821">
+    <state x="120" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1581953399078" />
+    <state x="462" y="97" key="FileChooserDialogImpl" timestamp="1582038013170">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="555" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581953344821" />
-    <state width="1322" height="555" key="GridCell.Tab.0.center" timestamp="1581953344821">
+    <state x="462" y="97" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1582038013170" />
+    <state width="1322" height="555" key="GridCell.Tab.0.bottom" timestamp="1582145613582">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="555" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581953344821" />
-    <state width="1322" height="555" key="GridCell.Tab.0.left" timestamp="1581953344821">
+    <state width="1322" height="555" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582145613582" />
+    <state width="1322" height="555" key="GridCell.Tab.0.center" timestamp="1582145613582">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="555" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581953344821" />
-    <state width="1322" height="555" key="GridCell.Tab.0.right" timestamp="1581953344821">
+    <state width="1322" height="555" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582145613582" />
+    <state width="1322" height="555" key="GridCell.Tab.0.left" timestamp="1582145613581">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="555" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581953344821" />
-    <state width="1322" height="555" key="GridCell.Tab.1.bottom" timestamp="1581953344821">
+    <state width="1322" height="555" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582145613581" />
+    <state width="1322" height="555" key="GridCell.Tab.0.right" timestamp="1582145613582">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="555" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581953344821" />
-    <state width="1322" height="555" key="GridCell.Tab.1.center" timestamp="1581953344821">
+    <state width="1322" height="555" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582145613582" />
+    <state width="1322" height="555" key="GridCell.Tab.1.bottom" timestamp="1582145613582">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="555" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1581953344821" />
-    <state width="1322" height="555" key="GridCell.Tab.1.left" timestamp="1581953344821">
+    <state width="1322" height="555" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582145613582" />
+    <state width="1322" height="555" key="GridCell.Tab.1.center" timestamp="1582145613582">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="555" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1581953344821" />
-    <state width="1322" height="555" key="GridCell.Tab.1.right" timestamp="1581953344821">
+    <state width="1322" height="555" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1582145613582" />
+    <state width="1322" height="555" key="GridCell.Tab.1.left" timestamp="1582145613582">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="555" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1581953344821" />
-    <state x="65" y="67" key="new project wizard" timestamp="1581772484213">
+    <state width="1322" height="555" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1582145613582" />
+    <state width="1322" height="555" key="GridCell.Tab.1.right" timestamp="1582145613582">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="65" y="67" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1581772484213" />
+    <state width="1322" height="555" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1582145613582" />
+    <state x="390" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1582037464967">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="390" y="190" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1582037464967" />
+    <state x="65" y="67" key="new project wizard" timestamp="1582038022415">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="65" y="67" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1582038022415" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1581837308266">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

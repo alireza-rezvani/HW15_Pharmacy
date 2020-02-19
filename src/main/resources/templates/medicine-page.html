@@ -2,14 +2,15 @@
 <html xmlns:th="https://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link th:href="@{/css/bootstrap.min.css}"  rel="stylesheet" type="text/css" >
+    <title>دارو</title>
 </head>
-<body>
+<body  class="text-center  p-5 justify-content-center align-content-center bg-info" style="font-family: 'B Mitra'">
 
-<form th:action="@{/medicine/defineMedicine}"><input type="submit" value="تعریف دارو"></form>
-<form th:action="@{/medicine/medicineList}"><input type="submit" value="لیست داروها"></form>
+<form th:action="@{/medicine/defineMedicine}"><input class="btn btn-dark" type="submit" value="تعریف دارو"></form><br>
+<form th:action="@{/medicine/medicineList}"><input class="btn btn-dark" type="submit" value="لیست داروها"></form><br>
 
-<form th:action="@{/}"><input type="submit" value="بازگشت به صفحه اصلی"></form>
+<form th:action="@{/}"><input class="btn btn-dark" type="submit" value="بازگشت به صفحه اصلی"></form>
 
 </body>
 </html>

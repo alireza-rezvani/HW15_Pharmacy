@@ -2,11 +2,12 @@
 <html xmlns:th="https://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link th:href="@{/css/bootstrap.min.css}"  rel="stylesheet" type="text/css" >
+    <title>داروخانه</title>
 </head>
-<body>
-<form th:action="@{/patient}"><input type="submit" value="بیمار"></form>
-<form th:action="@{/medicine}"><input type="submit" value="دارو"></form>
+<body  class="text-center p-5 justify-content-center align-content-center bg-info" style="font-family: 'B Mitra'">
+<p><form th:action="@{/patient}"><input class="btn btn-dark" type="submit" value="بیمار"></form></p>
+<form th:action="@{/medicine}"><input class="btn btn-dark" type="submit" value="دارو"></form>
 
 </body>
 </html>

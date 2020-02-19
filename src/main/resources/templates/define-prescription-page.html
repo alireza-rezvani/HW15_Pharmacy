@@ -3,21 +3,24 @@
 <head>
     <title>تعریف نسخه</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link th:href="@{/css/bootstrap.min.css}"  rel="stylesheet" type="text/css" >
+
 </head>
-<body>
+<body  class="text-center row p-5 justify-content-center align-content-center bg-info" style="font-family: 'B Mitra'">
+<div>
 <h1>تعریف نسخه</h1>
 <form action="#" th:action="@{/prescription/definePrescription}" th:object="${prescription}" method="post">
     <p hidden="hidden"><input type="text" th:field="*{id}"/></p>
-    <p>کد نسخه: <input type="text" th:field="*{code}"/></p>
-    <p>تاریخ صدور نسخه: <input type="text" th:field="*{creationDate}" /></p>
-    <p>تاریخ مراجعه بیمار: <input type="text" th:field="*{registrationDate}" /></p>
+    <p> <input class="text-center" type="text" th:field="*{code}" placeholder="کد نسخه"/></p>
+    <p> <input class="text-center" type="text" th:field="*{creationDate}" placeholder="تاریخ صدور نسخه"/></p>
+    <p> <input class="text-center" type="text" th:field="*{registrationDate}" placeholder="تاریخ مراجعه بیمار"/></p>
     <p><input type="hidden" th:field="*{patient}"/></p>
-    <p><input type="submit" value="تایید" th:name="ok"/>
-    <p><input type="submit" value="لغو" th:name="cancel"/>
+    <p><input class="btn btn-dark" type="submit" value="تایید" th:name="ok"/>
+    <input class="btn btn-dark"  type="submit" value="لغو" th:name="cancel"/>
 </form>
 
-<form th:action="@{/}"><input type="submit" value="بازگشت به صفحه اصلی"></form>
-
+<form th:action="@{/}"><input class="btn btn-dark"  type="submit" value="بازگشت به صفحه اصلی"></form>
+</div>
 
 </body>
 </html>

@@ -44,6 +44,20 @@ public class PrescriptionController {
 
     }
 
+    @RequestMapping(value = "/definePrescription" ,params = "cancel", method = RequestMethod.POST)
+    public String definePrescriptionSubmitCancel(@ModelAttribute Prescription prescription){
+//        if (prescription.getId() == null) {
+//            prescriptionService.save(prescription);
+
+            return "redirect:/patient/editPatient/" + prescription.getPatient().getId();
+//        }
+//        else {
+//            prescriptionService.update(prescription);
+//            return "redirect:/patient/editPatient/" + prescription.getPatient().getId();
+//        }
+
+    }
+
 
     @RequestMapping(value = "/deletePrescription/{id}")
     public String deletePrescriptionById(@PathVariable(value = "id") final Long id){

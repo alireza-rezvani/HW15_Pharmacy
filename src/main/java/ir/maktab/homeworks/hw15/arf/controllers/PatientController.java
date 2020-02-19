@@ -74,9 +74,9 @@ public class PatientController {
     }
 
 
-    @RequestMapping(value = "/submitPatientPage")
-    public String submitPatientPage(){
-
-        return "redirect:/patient";
-    }
+//    @RequestMapping(value = "/submitPatientPage")
+//    public String submitPatientPage(){
+//
+//        return "redirect:/patient";
+//    }
 }

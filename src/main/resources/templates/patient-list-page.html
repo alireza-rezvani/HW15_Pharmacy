@@ -3,37 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>لیست بیماران</title>
-</head>
-<body>
+    <link th:href="@{/css/bootstrap.min.css}"  rel="stylesheet" type="text/css" >
 
-<table xmlns:th="http://www.thymeleaf.org">
+</head>
+<body  class="text-center  p-5 justify-content-center align-content-center bg-info" style="font-family: 'B Mitra'">
+
+<table class="table table-dark ">
     <thead>
     <tr>
-        <th>نام</th>
-        <th>نام خانوادگی</th>
-        <th>جنسیت</th>
         <th colspan="4">عملیات</th>
+        <th>جنسیت</th>
+        <th>نام خانوادگی</th>
+        <th>نام</th>
     </tr>
     </thead>
     <tbody>
     <tr th:each = "patientItem : ${patientList}">
-        <td th:text = "${patientItem.name}"/>
-        <td th:text = "${patientItem.family}"/>
+        <td><form action="#" th:action="@{/patient/deletePatient/__${patientItem.getId()}__}"><input class="btn btn-danger" hidden th:id="${patientItem.getId()}" type="submit" value="تایید حذف"></form></td>
+        <td><button class="btn btn-light"  th:onclick="|delConfirm(${patientItem.getId()})|">حذف</button></td>
+        <td><form action="#" th:action="@{/patient/editPatient/__${patientItem.getId()}__}"><input class="btn btn-light" type="submit" value="ویرایش"></form></td>
+        <td><form action="#" th:action="@{/patient/viewPatient/__${patientItem.getId()}__}"><input class="btn btn-light" type="submit" value="مشاهده"></form></td>
         <td th:text = "${patientItem.gender}"/>
-        <td><button onclick="delConfirm()">حذف</button></td>
-        <td><form action="#" th:action="@{/patient/deletePatient/__${patientItem.getId()}__}"><input hidden id="delButton" type="submit" value="تایید حذف"></form></td>
-        <td><form action="#" th:action="@{/patient/editPatient/__${patientItem.getId()}__}"><input type="submit" value="ویرایش"></form></td>
-        <td><form action="#" th:action="@{/patient/viewPatient/__${patientItem.getId()}__}"><input type="submit" value="مشاهده"></form></td>
+        <td th:text = "${patientItem.family}"/>
+        <td th:text = "${patientItem.name}"/>
     </tr>
     </tbody>
 </table>
 
-<form th:action="@{/}"><input type="submit" value="بازگشت به صفحه اصلی"></form>
+<form th:action="@{/}"><input class="btn btn-dark" type="submit" value="بازگشت به صفحه اصلی"></form>
 
 
 <script>
-    function delConfirm() {
-        document.getElementById("delButton").hidden = false;
+
+    function delConfirm(id) {
+        document.getElementById(id).hidden = false;
     }
 </script>
 
